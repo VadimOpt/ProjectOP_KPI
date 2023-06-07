@@ -102,3 +102,11 @@ body{
     font-size: 40px;
     line-height: 24px;
 }
+.clock {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: #333;
+}
