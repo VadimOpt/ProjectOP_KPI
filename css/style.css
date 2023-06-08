@@ -103,10 +103,25 @@ body{
     line-height: 24px;
 }
 .clock {
-    font-size: 48px;
+    font-size: 60px;
     font-weight: bold;
     text-align: center;
     color: white;
     padding: 20px;
-    background-color: #333;
+    background-color: #333333;
+}
+.date {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color:#4b4b4b ;
+}
+
+.timezone {
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: #4b4b4b;
 }
