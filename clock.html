@@ -30,7 +30,11 @@
                     <div class="text">Alarm script</div>
                 </div>
                 <div id="tab_4" class="tabs__block">
-
+                    <input type="number" id="time-input" min="1">
+                    <label for="time-input">Введіть час (у секундах):</label>
+                    <button onclick="startTimer()">Старт</button>
+                    <audio id="ringtone" src="ringtone/ringtone.mp3"></audio>
+                    <script src="js/timer.js"></script>
                 </div>
             </div>
             <div class="text">
