@@ -17,14 +17,14 @@ function updateClock() {
 
 function updateDate() {
     const currentTime = new Date();
-    let timezoneOffset = currentTime.getTimezoneOffset() / 60; // Отримуємо часовий пояс у годинах
+    const timezoneOffset = currentTime.getTimezoneOffset() / 60; // get a timezone
 
 
     // we get the date
-    let date = "DATE:" + " " + currentTime.toLocaleDateString();
+    const date = "DATE:" + " " + currentTime.toLocaleDateString();
 
     // we get the timezone
-    let timezone = (timezoneOffset < 0 ? "+" : "-") + Math.abs(timezoneOffset).toString().padStart(2, '0') + ":00" + " " +"UTC";
+    const timezone = (timezoneOffset < 0 ? "+" : "-") + Math.abs(timezoneOffset).toString().padStart(2, '0') + ":00" + " " +"UTC";
 
     document.querySelector(".date").innerHTML = date;
     document.querySelector(".timezone").innerHTML = timezone;

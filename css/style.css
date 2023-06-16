@@ -196,3 +196,26 @@ body{
     color: white;
     cursor: pointer;
 }
+
+.tabs__label{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.tabs__input{
+    font-size: 28px;
+}
+
+.tabs__button{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4b4b4b;
+    color: white;
+    cursor: pointer;
+}

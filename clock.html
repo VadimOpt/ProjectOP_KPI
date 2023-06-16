@@ -17,11 +17,9 @@
             </nav>
             <div class="tabs__body">
                 <div id="tab_1" class="tabs__block">
-                    <script src="js/clock.js"></script>
                     <div class="date"></div>
                     <div class="timezone"></div>
-                    <div class="clock"><script src="js/clock.js"></script></div>
-
+                    <div class="clock"></div>
                 </div>
                 <div id="tab_2" class="tabs__block">
                     <div id="display">00:00:00</div>
@@ -29,18 +27,19 @@
                     <button id="reset">Reset</button>
                     <button id="lap">Lap</button>
                     <div id="laps"></div>
-                    <script src="js/stopwatch.js"></script>
                     <div class="text">Stopwatch script</div>
                 </div>
                 <div id="tab_3" class="tabs__block">
-                    <div class="text">Alarm script</div>
+                    <label class="tabs__label" for="alarmTime">choose a time of alarm:</label>
+                    <input class="tabs__input" type="time" id="alarmTime">
+                    <button class="tabs__button" onclick="setAlarm()">setup alarm</button>
+                    <ul id="alarmsList"></ul>
                 </div>
                 <div id="tab_4" class="tabs__block">
                     <input type="number" id="time-input" min="1">
                     <label for="time-input">Введіть час (у секундах):</label>
                     <button id="start" onclick="startTimer()">Старт</button>
                     <audio id="ringtone" src="ringtone/ringtone.mp3"></audio>
-                    <script src="js/timer.js"></script>
                 </div>
             </div>
             <div class="text">
@@ -49,5 +48,9 @@
         </div>
     </div>
 </div>
+<script src="js/alarmClock.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/stopwatch.js"></script>
 </body>
 </html>
