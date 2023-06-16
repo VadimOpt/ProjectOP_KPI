@@ -12,7 +12,6 @@ function setAlarm() {
 
     const timeUntilAlarm = alarm.getTime() - currentTime.getTime();
     if (timeUntilAlarm < 0) {
-        alert("setup alarm");
         return;
     }
 
