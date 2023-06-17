@@ -13,10 +13,16 @@ function startTimer() {
         if (seconds <= 0) {
             clearInterval(timer);
             playRingtone();
+        } else {
+            updateTimerDisplay(seconds)
         }
     }, 1000);
 }
 
+function updateTimerDisplay(seconds){
+    let timerDisplay = document.getElementById('timer-display')
+    timerDisplay.textContent = seconds + ' Seconds';
+}
 function playRingtone() {
     let ringtone = document.getElementById('ringtone');
     ringtone.play();

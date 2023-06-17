@@ -219,3 +219,10 @@ body{
     color: white;
     cursor: pointer;
 }
+
+#timer-display{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
